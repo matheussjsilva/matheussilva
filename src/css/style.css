@@ -3,12 +3,18 @@
     /* Cor principal para elementos de destaque */
     --cor-secundaria: #9a8c98;
     /* Cor secundária para elementos complementares */
-    --cor-terciaria: #c9ada7;
+    --cor-terciaria: rgba(101, 24, 180, 1);
     /* Cor terciária para elementos de destaque secundários */
-    --cor-texto: #2a2a2a;
+    --cor-texto: #00d2df;
     /* Cor de texto principal */
-    --cor-fundo: #f0efeb;
+    --cor-texto-secundario: #c4c4c4;
+    /* Cor de texto secundario */
+    --cor-texto-terceario: #009688;
+    /* Cor de texto terceario */
+    --cor-fundo: #121212;
     /* Cor de fundo geral */
+    --cor-fundo-secundaria: #151515;
+    /* Cor secundaria de fundo */
 }
 
 main {
@@ -17,18 +23,36 @@ main {
 
 }
 
-/* Cabeçalho */
-header {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
-
-    backdrop-filter: blur(5px);
-    background-color: var(--cor-secundaria);
-
+a {
+    text-decoration: none;
 }
+
+/* Scroll Bar*/
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Largura da barra de rolagem */
+    background-color: #000000;
+    /* Cor de fundo */
+}
+
+/* Estilizando o polegar (a parte arrastável) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-texto);
+    /* Cor do polegar */
+    border-radius: 5px;
+    /* Arredondamento do polegar */
+}
+
+/* Estilizando o polegar quando estiver sendo arrastado */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cor-texto);
+    /* Cor do polegar ao passar o mouse */
+}
+
+/* Header */
+
 
 header {
     position: fixed;
@@ -40,9 +64,10 @@ header {
     align-items: center;
     background-color: #45393A;
     height: 90px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(36, 36, 36, 0.5);
     backdrop-filter: blur(5px);
     z-index: 9999;
+
 }
 
 li {
@@ -55,20 +80,28 @@ li {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
-    font-size: 1.5em;
+    font-size: 1.3em;
 
 
 }
 
 .main-header .nav-items li a {
     text-decoration: none;
-    color: #333333;
+    color: white;
+    font-weight: bold;
+    border-bottom: solid 0px white;
+    transition: border-bottom 0.2s ease;
 
+}
 
+.main-header .nav-items li a:hover {
+    color: #009688;
+    border-bottom: solid 10px white;
 }
 
 .main-header .nav-items li:hover a {
     color: #009688;
+
 }
 
 .main-header .nav-items li:last-child {
@@ -80,99 +113,223 @@ li {
 
 
 
-/* Apresentação */
+/* Presentation */
 
 .presentation-main {
     margin-top: 90px;
     display: flex;
-
     height: 95vh;
 
 }
 
 .presentation-container {
     flex: 1;
-    background-color: #45393A;
-
-
+    background-color: var(--cor-fundo);
+    color: #fff;
 
 }
 
 .greet-container {
     border: #009688 solid;
-    padding: 30px;
+    padding-left: 200px;
+    padding-top: 190px;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
     height: 50%;
+    margin-top: 150px;
+
 
 }
 
-/* Botao */
+.hello {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hello-name {
+    font-size: 65px;
+    color: var(--cor-texto);
+
+}
+
+.hello-skill {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+
+
+/* Button presentation */
 
 .button-container {
     border: #009688 solid;
     justify-content: center;
     align-items: center;
     height: 15%;
-    margin-top: 150px;
-
+    margin-top: 0 auto;
+    flex-direction: row;
+    display: flex;
+    padding-right: 210px;
+    padding-bottom: 70px;
 }
 
-.linkedin-button {
+#button-refence {
     display: block;
-    margin: 0 auto;
-    width: 400px;
-    margin-top: 15px;
-    height: 4em;
-    border-radius: 50px;
-    background-color: #45393A;
-    color: #F5F5F5;
-    font-size: 1.3rem;
-
+    width: 7em;
+    height: 2.4em;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 30px;
+    background-color: var(--cor-fundo);
+    border: var(--cor-texto) solid 2px;
+    color: #F5F5F5
 }
 
-.linkedin-button:hover {
+
+#button-refence:hover {
     cursor: pointer;
+    background-color: #fff;
+    transition: 0.5s ease;
+    color: var(--cor-texto-terceario);
+    font-weight: bold;
 }
+
+
+/* Image presentation */
 
 .image-right {
-    background-color: #3490dc;
+    background-color: var(--cor-fundo);
     display: flex;
     align-items: center;
     justify-content: flex-end;
     max-width: 100%;
+    width: 50vw;
+
 
 }
 
-.image-right img {
-    width: 100%;
-    height: 50%;
+
+
+
+.image-content {
+    position: relative;
+    margin: 0 auto;
+    width: 40%;
+    height: 40%;
+
 }
+
 
 /* Seção sobre mim */
 .about {
     height: 50vh;
     background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid cadetblue;
+    background-color: var(--cor-fundo-secundaria);
 }
+
+.about div {
+
+    border: #009688 solid 5px;
+    justify-content: center;
+
+    align-items: center;
+    height: 80px;
+    padding-bottom: 100px;
+    margin-bottom: 15px;
+}
+
+.about h1 {
+    color: #a5a2a2;
+    margin-bottom: 150px;
+    padding-top: 50px;
+}
+
+.about-content {
+    border: #009688 solid 5px;
+    width: 95%;
+    height: 40px;
+    padding-bottom: 150px;
+
+}
+
+.about p {
+    color: #a5a2a2;
+    margin-bottom: 5px;
+
+}
+
+
 
 /* Seção Projetos */
 .projects {
+    color: white;
     height: 50vh;
-    background-color: #009688;
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid cadetblue 5px;
+
 
 }
 
+.projects h1 {
+    border: #009688 solid 5px;
+}
+
+.projects-container {
+    border: #5a0096 solid 5px;
+    display: flex;
+    height: 100vh;
+    padding: 0;
+
+
+}
+
+
+.project-image {
+    width: 300px;
+    border: #960039 solid 5px;
+    border-radius: 15px;
+}
+
+.project-card {
+    border-left: #009688 solid 5px;
+
+    padding: 20px;
+}
+
+.description-container h2 {
+    width: 50%;
+    border-bottom: #009688 solid 5px;
+}
+
+
+
+/* Seção Skills */
+
 .skills {
+    color: white;
     height: 50vh;
-    background-color: #333333;
+    background-color: var(--cor-fundo-secundaria);
 
 }
 
 /* Footer */
 footer {
+    display: flex;
+    flex-direction: column;
+
     background-color: #a5a2a2;
     color: #F5F5F5;
     align-items: center;
     justify-content: center;
+    height: 90px;
 }
