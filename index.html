@@ -21,16 +21,43 @@
 
 <body>
     <main id="home">
-        <header class="main-header">
-            <nav class="nav-bar">
-                <ul class="nav-items">
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Sobre mim</a></li>
-                    <li><a href="#projects-presentation">Projetos</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                </ul>
-            </nav>
+
+        <header>
+            <div class="container">
+
+                <div class="menu-section">
+                    <div class="container-menu">
+                        <input type="checkbox" id="checkbox-menu" />
+                        <label class="menu-button-container" for="checkbox-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <nav>
+                            <ul class="menu">
+                                <li>
+                                    <a href="#home">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="#about">Sobre mim</a>
+                                </li>
+                                <li>
+                                    <a href="#projects-presentation">Projetos</a>
+                                </li>
+                                <li>
+                                    <a href="#skills">Habilidades</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </header>
+
+
+
+
+
         <section class="presentation-main">
             <div class="presentation-container">
                 <div class="greet-container">
@@ -77,68 +104,119 @@
 
 
             <div class="card">
-                <div class="image">
-                    <img src="./src/images/astronauta-black.gif" alt="" />
-                </div>
-                <h2 class="project-title">Proteto 1</h2>
-                <div class="content">
-                    <p class="title text-medium">
-                        Com startups mais 'baratas', grandes empresas buscam aquisições
-                    </p>
+                <a href="https://matheussjsilva.github.io/The-Last-Us-project/" target="_blank">
+                    <div class="image">
+                        <img src="./src/images/projects-images/logo-the-last-of-us.png"
+                            alt="Imagem do site de apresentação do The Last of Us" />
+                    </div>
+                    <h2 class="project-title">The Last of Us</h2>
+                    <div class="content">
+                        <p class="title text-medium">
+                            Projeto realizado durante curso "Dev em Dobro" onde pude itensificar conhecimentos em HTML
+                            CSS e
+                            JavaSCript.
+                        </p>
 
-                    <div class="info">
-                        <p class="text-medium"> 57 Min</p>
+                        <div class="info">
+                            <p class="text-medium"> </p>
+                        </div>
+
                     </div>
-                    <div class="project-button">
-                        <a href="#"><input type="button" value="Visualizar"></a>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://play.google.com/store/apps/details?id=com.empresalogistica.icms" target="_blank">
+                    <div class="image">
+                        <img src="./src/images/projects-images/icms-logo.png"
+                            alt="Imagem do aplicativo IMCS Consulta" />
                     </div>
-                </div>
+                    <h2 class="project-title">IMCS Consulta</h2>
+                    <div class="content">
+                        <p class="title text-medium">
+                            Primeiro aplicativo desenvolvido durante laboratorio no curso de Analise e desenvolvimento
+                            de sistemas. O usuario consulta o IMCS de acordo com o estado desejado e valor da
+                            mercadoria, aplicativo desenvolvido de
+                            forma nativa utilizando o android studio com a
+                            linguagem
+                            java.
+                        </p>
+
+                        <div class="info">
+                            <p class="text-medium"> </p>
+                        </div>
+
+                    </div>
+
+                </a>
             </div>
 
             <div class="card">
-                <div class="image">
-                    <img src="./src/images/astronauta-black.gif" alt="" />
-                </div>
-
-                <div class="content">
-                    <p class="title text-medium">
-                        Com startups mais 'baratas', grandes empresas buscam aquisições
-                    </p>
-                    <div class="info">
-                        <p class="text-medium"> 57 Min</p>
+                <a href="https://matheussjsilva.github.io/portifolio-newsletter/#" target="_blank">
+                    <div class="image">
+                        <img src="./src/images/projects-images/logo-news-letter-startse.png"
+                            alt="Imagem de pagina Newsletter" />
                     </div>
-                </div>
+                    <h2 class="project-title">Newsletter</h2>
+                    <div class="content">
+                        <p class="title text-medium">
+                            Projeto de pagina newsletter desenvolvido durante o curso fullstack da "StartSe", nesse
+                            projeto foi necessario utilizar HTML e CSS <span class="alert-span">(projeto em
+                                desenvolvimento)</span>
+                        </p>
+
+                        <div class="info">
+                            <p class="text-medium"> </p>
+                        </div>
+
+                    </div>
+
+                </a>
             </div>
 
             <div class="card">
-                <div class="image">
-                    <img src="./src/images/astronauta-black.gif" alt="" />
-                </div>
-
-                <div class="content">
-                    <p class="title text-medium">
-                        Com startups mais 'baratas', grandes empresas buscam aquisições
-                    </p>
-                    <div class="info">
-                        <p class="text-medium"> 57 Min</p>
+                <a href="https://github.com/matheussjsilva/projeto-color-flipper" target="_blank">
+                    <div class="image">
+                        <img src="./src/images/projects-images/color-flipper.png"
+                            alt="Imagem de aplicativo color fliper que gera cores aleatorias" />
                     </div>
-                </div>
+                    <h2 class="project-title">Collor Flipper</h2>
+                    <div class="content">
+                        <p class="title text-medium">
+                            Projeto realizado durante curso da "FreeCodeCamp", onde foi possível intenssificar
+                            aprendizados em JavaScript.
+                        </p>
+
+                        <div class="info">
+                            <p class="text-medium"> </p>
+                        </div>
+
+                    </div>
+
+                </a>
             </div>
 
             <div class="card">
-                <div class="image">
-                    <img src="./src/images/astronauta-black.gif" alt="" />
-                </div>
-
-                <div class="content">
-                    <p class="title text-medium">
-                        Com startups mais 'baratas', grandes empresas buscam aquisições
-                    </p>
-                    <div class="info">
-                        <p class="text-medium"> 57 Min</p>
+                <a href="https://play.google.com/store/apps/details?id=com.healthtech.imctechfree" target="_blank">
+                    <div class="image">
+                        <img src="./src/images/projects-images/logo-imc-calculadora.png"
+                            alt="Imagem de aplicativo color fliper que gera cores aleatorias" />
                     </div>
-                </div>
+                    <h2 class="project-title">IMC Calculadora</h2>
+                    <div class="content">
+                        <p class="title text-medium">
+                            Aplicatico de calculo de IMC desenvolvido durante curso da "OneBitCode", utilizando
+                            ReactNative.
+                        </p>
+
+                        <div class="info">
+                            <p class="text-medium"> </p>
+                        </div>
+
+                    </div>
+
+                </a>
             </div>
+
 
 
         </section>
