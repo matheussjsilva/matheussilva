@@ -1,0 +1,90 @@
+@media screen and (max-width: 1100px) {
+
+    /* presentation */
+    .presentation-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 350px;
+
+    }
+
+    .presentation-container {
+        margin-right: 200px;
+    }
+
+
+
+    .image-right {
+        display: none;
+    }
+
+    /* botao */
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 150px;
+
+
+
+    }
+
+    .button-container a:nth-child(1) {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+        padding: 0;
+    }
+}
+
+/* About */
+.about {
+    padding-top: 10px;
+    height: 80vh;
+
+}
+
+.about div h1 {
+    margin-top: 50px;
+}
+
+.about-content {
+    max-width: 600px;
+
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        max-width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+
+
+    }
+}
+
+/* Projects */
+
+
+
+@media (max-width: 1000px) {
+    .container {
+        padding: 0px 20px;
+    }
+}
+
+/* Skills */
+
+@media (max-width: 768px) {
+    .skill-container {
+        flex-direction: column;
+    }
+}
