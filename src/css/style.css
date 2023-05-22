@@ -67,6 +67,7 @@ header {
     background-color: rgba(36, 36, 36, 0.5);
     backdrop-filter: blur(5px);
     z-index: 9999;
+    border-bottom: #009688 solid 1.5px;
 
 }
 
@@ -130,7 +131,7 @@ li {
 }
 
 .greet-container {
-    border: #009688 solid;
+
     padding-left: 200px;
     padding-top: 190px;
     justify-content: center;
@@ -163,7 +164,7 @@ li {
 /* Button presentation */
 
 .button-container {
-    border: #009688 solid;
+
     justify-content: center;
     align-items: center;
     height: 15%;
@@ -223,25 +224,25 @@ li {
 
 /* Seção sobre mim */
 .about {
-    height: 50vh;
+    height: 60vh;
     background-color: #333333;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid cadetblue;
+
     background-color: var(--cor-fundo-secundaria);
 }
 
 .about div {
 
-    border: #009688 solid 5px;
+
     justify-content: center;
 
     align-items: center;
     height: 80px;
     padding-bottom: 100px;
-    margin-bottom: 15px;
+    margin-bottom: 145px;
 }
 
 .about h1 {
@@ -251,7 +252,7 @@ li {
 }
 
 .about-content {
-    border: #009688 solid 5px;
+
     width: 95%;
     height: 40px;
     padding-bottom: 150px;
@@ -268,48 +269,94 @@ li {
 
 /* Seção Projetos */
 .projects {
-    color: white;
-    height: 50vh;
+    color: var(--cor-texto-secundario);
+    height: 80vh;
     background-color: var(--cor-fundo);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid cadetblue 5px;
+    padding-top: 90px;
 
 
 }
 
 .projects h1 {
-    border: #009688 solid 5px;
+    /* border-bottom: #009688 solid 5px; */
 }
 
 .projects-container {
-    border: #5a0096 solid 5px;
+
     display: flex;
     height: 100vh;
     padding: 0;
+    overflow: hidden;
 
 
 }
 
+.image-block {
+    overflow: hidden;
+
+    width: 350px;
+    height: 200px;
+    border-left: #00d2df solid 10px;
+    border-radius: 5px
+}
 
 .project-image {
-    width: 300px;
-    border: #960039 solid 5px;
-    border-radius: 15px;
+    position: relative;
+    width: 350px;
+    height: 200px;
+
+
+}
+
+.project-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover {
+    transform: scale(1.15);
 }
 
 .project-card {
-    border-left: #009688 solid 5px;
 
     padding: 20px;
 }
 
 .description-container h2 {
-    width: 50%;
-    border-bottom: #009688 solid 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
+
+
+.project-button-container {
+
+    margin-top: 20px;
+}
+
+.project-button-container a input {
+    width: 120px;
+    height: 40px;
+    display: block;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: var(--cor-fundo);
+    border: var(--cor-texto) solid 2px;
+    color: #F5F5F5;
+    font-weight: 500;
+}
+
+.project-button-container a input:hover {
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.8s ease;
+    color: var(--cor-texto-terceario);
+
+}
+
+
 
 
 
@@ -323,11 +370,17 @@ li {
 }
 
 /* Footer */
+
+.span-name {
+    color: var(--cor-texto);
+
+}
+
 footer {
     display: flex;
     flex-direction: column;
 
-    background-color: #a5a2a2;
+    background-color: var(--cor-fundo);
     color: #F5F5F5;
     align-items: center;
     justify-content: center;
