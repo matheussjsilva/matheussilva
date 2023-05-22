@@ -235,7 +235,7 @@ header .container img {
 
 /* Seção sobre mim */
 #about {
-    height: 40vh;
+    height: 50vh;
     background-color: #333333;
     display: flex;
     flex-direction: column;
@@ -251,29 +251,38 @@ header .container img {
     justify-content: center;
 
     align-items: center;
-    height: 80px;
+    height: 10px;
     padding-bottom: 100px;
     margin-bottom: 145px;
 }
+
+
 
 .about h1 {
     color: #a5a2a2;
     margin-bottom: 80px;
     padding-top: 90px;
+
+
 }
 
 .about-content {
 
     width: 95%;
     height: 40px;
-    padding-bottom: 200px;
+    padding-bottom: 2px;
+
+
 
 
 }
 
+
+
 .about p {
     color: #a5a2a2;
     margin-bottom: 5px;
+    letter-spacing: 2px;
 
 }
 

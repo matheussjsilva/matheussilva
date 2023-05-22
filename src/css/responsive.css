@@ -219,5 +219,26 @@
 
     }
 
+    .about h1 {
+        color: #a5a2a2;
+        margin-bottom: 80px;
+        padding-top: 90px;
+        position: absolute;
+        top: 100%;
+        right: 40%;
+    }
+
+    .about-content {
+
+        width: 95%;
+        height: 40px;
+        padding-bottom: 2px;
+        top: 125%;
+        bottom: 10%;
+        position: absolute;
+
+
+    }
+
 
 }
