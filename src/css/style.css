@@ -281,8 +281,11 @@ header .container img {
 
 .about p {
     color: #a5a2a2;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
+    /* margin-bottom: 5px;
+    letter-spacing: 1px; */
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
 
 }
 
