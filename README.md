@@ -1,20 +1,33 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Portfólio de Matheus Silva
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Este é o meu portfólio pessoal, onde compartilho minha jornada de transição de carreira para a área de tecnologia. Sou Matheus Soares de Jesus Silva, um aspirante a FullStack Developer, e este portfólio é uma forma de mostrar meu trabalho e minhas habilidades.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Pré-requisitos
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+Para visualizar o portfólio, você só precisa de um navegador da web moderno.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Como usar
+
+1. Faça o download ou clone o repositório.
+
+2. Abra o arquivo `index.html` no navegador.
+
+## Conteúdo
+
+O portfólio inclui várias seções:
+
+- **Início**: Uma página inicial de boas-vindas.
+
+- **Sobre Mim**: Uma breve introdução sobre mim e minha jornada na área de tecnologia.
+
+- **Projetos**: Uma lista apresentando projetos realizados e em andamento.
+
+- **Habilidades**: Uma seção destacando as principais habilidades, incluindo HTML, CSS e JavaScript.
+
+## Tecnologias Utilizadas
+
+Este portfólio foi criado usando HTML, CSS e JavaScript.
+
+## Autor
+
+Este portfólio foi desenvolvido por [Matheus Soares de Jesus Silva](https://www.linkedin.com/in/matheus-soares-de-jesus-silva-a54719127/).
