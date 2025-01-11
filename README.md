@@ -30,4 +30,4 @@ Este portfólio foi criado usando HTML, CSS e JavaScript.
 
 ## Autor
 
-Este portfólio foi desenvolvido por [Matheus Soares de Jesus Silva](https://www.linkedin.com/in/matheus-soares-de-jesus-silva-a54719127/).
+Este portfólio foi desenvolvido por [Matheus Silva](https://www.linkedin.com/in/matheus-soares-de-jesus-silva-a54719127/).
